@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/wallpaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dmc12" />
+
+    <ImageButton
+        android:id="@+id/ebayweb"
+        android:layout_width="340dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:tint="#00FFFFFF"
+        android:onClick="ebayclick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ebay" />
+
+    <ImageButton
+        android:id="@+id/lojasamericanas"
+        android:layout_width="340dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:onClick="lojasamericanasclick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ebayweb"
+        app:srcCompat="@drawable/americana" />
+
+    <ImageButton
+        android:id="@+id/buscape"
+        android:layout_width="340dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:onClick="buscapeclick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lojasamericanas"
+        app:srcCompat="@drawable/buscape" />
+
+    <ImageButton
+        android:id="@+id/mercadolivreweb"
+        android:layout_width="340dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#05FFFFFF"
+        android:scaleType="fitCenter"
+        android:onClick="mercadolivreclick"
+        app:layout_constraintEnd_toEndOf="@+id/wallpaper"
+        app:layout_constraintStart_toStartOf="@+id/wallpaper"
+        app:layout_constraintTop_toBottomOf="@+id/buscape"
+        app:srcCompat="@drawable/mercadolivre" />
+
+    <ImageButton
+        android:id="@+id/webmotors"
+        android:layout_width="340dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:onClick="webmotorsclick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/wallpaper"
+        app:layout_constraintTop_toBottomOf="@+id/mercadolivreweb"
+        app:srcCompat="@drawable/webmotors" />
+
+    <ImageButton
+        android:id="@+id/netshoes"
+        android:layout_width="340dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:onClick="netshoesclick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/wallpaper"
+        app:layout_constraintTop_toBottomOf="@+id/webmotors"
+        app:srcCompat="@drawable/netshoes" />
+
+    <ImageButton
+        android:id="@+id/submarino"
+        android:layout_width="340dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:onClick="submarinoclick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/netshoes"
+        app:srcCompat="@drawable/submarino" />
+
+    <Button
+        android:id="@+id/sobre"
+        android:layout_width="287dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="sobreclick"
+        android:text="SOBRE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
